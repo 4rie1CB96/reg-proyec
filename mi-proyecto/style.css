@@ -9,6 +9,8 @@ html {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -92,12 +94,21 @@ li span {
 }
 
 .right-element li {
+    /* border: solid 1px; */
     display: flex;
     margin-right: 12px;
     position: relative;
-    padding-top: 7.5px;
-    padding-right: 14.2px;
+    /* padding-top: 7.5px; */
+    padding: 12px 14.2px 12px 0;
+    /* padding-right: 14.2px; */
 }
+
+li:hover  i{
+    color: #BB6653;
+    cursor: pointer;
+}
+
+
 
 .right-element li div {
     text-align: center;
@@ -113,6 +124,62 @@ li span {
 .wrapper-center {
     width: 45%;
 }
+
+.header-category {
+    /* border: solid black 1px; */
+    height: 8vh;
+    justify-content: left;
+    gap: 48px;
+}
+
+.category {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: var(--color);
+    color: white;
+}
+
+.category-list {
+    /* border: solid 1px; */
+    display: flex;
+    gap: 8px;
+    font-size: 1.4rem;
+    height: 100%;
+    align-items: center;
+}
+
+.category-list li {
+    /* border: solid 1px; */
+    text-align: center;
+    padding: 29px 16px;
+}
+
+.category-list li:hover {
+    color: #BB6653;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************************************** */
 
