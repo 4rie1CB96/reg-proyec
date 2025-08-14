@@ -1,6 +1,6 @@
 # Curso de Git y GitHub
 
-git init                            # Inicia un nuevo repositorio local
+git init                            # Inicia un nuevo repositorio local\n
 git config --list                   # Muestra todas las configuraciones actuales
 git config --global user.name "<nombre>"   # Configura tu nombre de usuario global
 git config --global user.email "<email>"   # Configura tu correo electrónico global
