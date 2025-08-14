@@ -1,5 +1,9 @@
 :root {
-    --color: #BB6653;
+    --primary-color: #ffe1b05d;
+    --secondary-color: #ffffff;
+    --price-color: #1e1e1e;
+    --link-hover-color: #c0aa83;
+    --box-bodybkg-color: #e8e5df;
 }
 
 html {
@@ -15,7 +19,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--price-color);
     display: block;
 }
 
@@ -37,7 +41,7 @@ i {
     padding: 0;
     /* border-bottom: #dddddd solid 1.6px; */
     font-size: 1.325rem;
-    background-color: #FAF7F3;
+    background-color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -70,6 +74,11 @@ i {
     border-right: solid #dddddd 1.6px;
     padding: 0 22px;
     /* margin-right: 14px; */
+    cursor: pointer;
+}
+
+.right-nav li:hover {
+    /* color: var(--primary-color); */
 }
 
 li span {
@@ -99,12 +108,13 @@ li span {
     margin-right: 12px;
     position: relative;
     /* padding-top: 7.5px; */
-    padding: 12px 14.2px 12px 0;
+    padding: 8px 12px 8px 0;
     /* padding-right: 14.2px; */
 }
 
 li:hover  i{
-    color: #BB6653;
+    /* color: #BB6653; */
+    color: var(--link-hover-color);
     cursor: pointer;
 }
 
@@ -133,12 +143,12 @@ li:hover  i{
 }
 
 .category {
-    padding: 0 12px;
+    padding: 4px 18px;
     display: flex;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    background-color: var(--color);
+    background-color: var(--link-hover-color);
     color: white;
 }
 
@@ -158,7 +168,7 @@ li:hover  i{
 }
 
 .category-list li:hover {
-    color: #BB6653;
+    color: var(--link-hover-color);
     cursor: pointer;
 }
 
@@ -198,17 +208,17 @@ form {
 .search input[type="text"] {
     padding: 6px;
     margin-right: 10px;
-    border: solid var(--color) 1px;
+    border: solid var(--link-hover-color) 1px;
     font-size: 17px;
     border-radius: 4px;
     width: 80%;
 }
 
 .search button {
-    padding: 6px 10px;
+    padding: 6px 15px;
     background: white;
-    color: var(--color);
-    border: solid var(--color) 1px;
+    color: var(--link-hover-color);
+    border: solid var(--link-hover-color) 1px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -218,6 +228,6 @@ form {
 }
 
 .search button:hover {
-    background: var(--color);
+    background: var(--link-hover-color);
     color: white;
 }
