@@ -47,7 +47,6 @@ i {
 
 .container {
     max-width: 1200px;
-    /* border: solid black 2px; */
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -75,10 +74,6 @@ i {
     padding: 0 22px;
     /* margin-right: 14px; */
     cursor: pointer;
-}
-
-.right-nav li:hover {
-    /* color: var(--primary-color); */
 }
 
 li span {
@@ -112,7 +107,7 @@ li span {
     /* padding-right: 14.2px; */
 }
 
-li:hover  i{
+.right-element li:hover i {
     /* color: #BB6653; */
     color: var(--link-hover-color);
     cursor: pointer;
@@ -173,13 +168,50 @@ li:hover  i{
 }
 
 
+main .container {
+    /* border: solid 1px; */
+    height: auto;
+    /* margin-top: 2px; */
+}
+
+.left-column {
+    /* border: solid 1px; */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.left-column i {
+    font-size: 14px;
+}
+
+.left-column li {
+    /* border: solid 1px; */
+    position: relative;
+    border-radius: 10px;
+    padding: 13px 66px 13px 12px;
+    font-size: 1.4rem;
+    background-color: var(--box-bodybkg-color);
+}
 
 
+.left-column li ul {
+    display: none;
+}
+
+li > i {
+    padding-right: 3px;
+}
 
 
-
-
-
+.left-column span {
+    /* border: solid 1px; */
+    /* background-color: red; */
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
 
 
 
